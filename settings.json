@@ -8,12 +8,18 @@
     "workbench.editor.enablePreview": false, // 新窗口打开文件
     "workbench.editorLargeFileConfirmation": 50, // 50MB
     "workbench.colorTheme": "Visual Studio Dark",
+    // "workbench.editor.wrapTabs": true,
 
+    "C_Cpp.default.cppStandard": "c++17",
     "search.followSymlinks": false,
-
     "extensions.experimental.affinity": {"vscode.vim": 1},
     "extensions.autoUpdate": false,
     "security.workspace.trust.enabled": false,
+    
+    // 新版本功能
+    "chat.commandCenter.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "window.commandCenter": false,
 
     // clang-format
     "editor.formatOnSave": false, // 这个不要打开，否则保存时会自动格式化
@@ -98,8 +104,8 @@
         {"before": ["<leader>", "g", "i", "t"], "commands": ["git-graph.view"]},
 
         // https://stackoverflow.com/questions/47527162/vscode-vscodevim-undo-key-rebinding
-        {"before": ["u"], "after": [], "commands": [{"command": "undo", "args": []}]},
-        {"before": ["<C-r>"], "after": [], "commands": [{"command": "redo", "args": []}]}
+        {"before": ["u"], "commands": [{"command": "undo", "args": []}]},
+        {"before": ["<C-r>"], "commands": [{"command": "redo", "args": []}]}
     ],
 
     // 自动切换输入法
@@ -128,4 +134,9 @@
 
     // 高亮插件2
     "highlight.configuration.ignoreCase": false,
+
+    // diff
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": true,
+    "diffEditor.useInlineViewWhenSpaceIsLimited": false,
 }
