@@ -38,4 +38,9 @@
         "key": "ctrl+b",
         "command": "workbench.action.toggleAuxiliaryBar"
     },
+    {
+        "key": "Shift Shift",
+        "command": "workbench.action.quickOpen"
+    }
+    
 ]

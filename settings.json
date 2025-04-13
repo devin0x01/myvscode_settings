@@ -6,8 +6,8 @@
     "editor.fontSize": 16,
     "editor.fontFamily": "'FiraCode Nerd Font', 'Consolas', 'Courier New', monospace",
     "workbench.editor.enablePreview": false, // 新窗口打开文件
-    "workbench.editorLargeFileConfirmation": 50, // 50MB
-    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.editorLargeFileConfirmation": 50,
+    // "workbench.colorTheme": "Visual Studio Dark",
     // "workbench.editor.wrapTabs": true,
 
     "C_Cpp.default.cppStandard": "c++17",
@@ -15,9 +15,6 @@
     "extensions.experimental.affinity": {"vscode.vim": 1},
     "extensions.autoUpdate": false,
     "security.workspace.trust.enabled": false,
-    
-    // 新版本功能
-    "chat.commandCenter.enabled": false,
     "editor.stickyScroll.enabled": false,
     "window.commandCenter": false,
 
@@ -139,4 +136,13 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.renderSideBySide": true,
     "diffEditor.useInlineViewWhenSpaceIsLimited": false,
+
+    "workbench.editorAssociations": {
+        "{hexdiff}:/**/*.*": "hexEditor.hexedit",
+        "{git,gitlens,git-graph}:/**/*.{md,csv,svg}": "default"
+    },
+    "extensions.ignoreRecommendations": true,
+    "marscode.codeCompletionPro": {
+        "enableCodeCompletionPro": true
+    },
 }
