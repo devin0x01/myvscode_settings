@@ -39,8 +39,13 @@
         "command": "workbench.action.toggleAuxiliaryBar"
     },
     {
-        "key": "Shift Shift",
+        "key": "Alt Alt",
         "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+alt+d",
+        "command": "vs-external-tools.externalCommand1",
+        "args": "Qt Designer",
+        "when": "resourceExtname == .ui"
     }
-    
 ]

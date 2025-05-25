@@ -3,7 +3,7 @@
     "editor.rulers": [120],
     "editor.renderWhitespace": "all", // 显示空格
     "editor.lineHeight": 1.3,
-    "editor.fontSize": 16,
+    "editor.fontSize": 14,
     "editor.fontFamily": "'FiraCode Nerd Font', 'Consolas', 'Courier New', monospace",
     "workbench.editor.enablePreview": false, // 新窗口打开文件
     "workbench.editorLargeFileConfirmation": 50,
@@ -132,6 +132,10 @@
     // 高亮插件2
     "highlight.configuration.ignoreCase": false,
 
+    "vs-external-tools.externalCommand1.command": "C:\\Mysw\\Qt\\Qt5.12.12\\5.12.12\\mingw73_32\\bin\\designer.exe",
+    "vs-external-tools.externalCommand1.args": ["$(ItemPath)"],
+    "vs-external-tools.externalCommand1.cwd": "$(ItemDir)",
+
     // diff
     "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.renderSideBySide": true,
@@ -142,7 +146,4 @@
         "{git,gitlens,git-graph}:/**/*.{md,csv,svg}": "default"
     },
     "extensions.ignoreRecommendations": true,
-    "marscode.codeCompletionPro": {
-        "enableCodeCompletionPro": true
-    },
 }
