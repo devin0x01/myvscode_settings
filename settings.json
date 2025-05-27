@@ -70,7 +70,10 @@
         {"before": ["<leader>", "h", "c"], "commands": ["highlightwords.removeAllHighlights"]},
         {"before": ["<leader>", "e"], "commands": ["workbench.view.explorer"]},
         {"before": ["<leader>", "b"], "commands": ["workbench.action.toggleAuxiliaryBar"]},
+
         {"before": ["<leader>", "g", "i", "t"], "commands": ["git-graph.view"]},
+        {"before": ["<leader>", "g", "n"], "commands": ["workbench.action.editor.nextChange"]},
+        {"before": ["<leader>", "g", "p"], "commands": ["workbench.action.editor.previousChange"]},
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {"before": ["<leader>", "f", "f"], "commands": ["workbench.action.quickOpen"]},
@@ -98,7 +101,10 @@
         {"before": ["<leader>", "h", "c"], "commands": ["highlightwords.removeAllHighlights"]},
         {"before": ["<leader>", "e"], "commands": ["workbench.view.explorer"]},
         {"before": ["<leader>", "b"], "commands": ["workbench.action.toggleAuxiliaryBar"]},
+
         {"before": ["<leader>", "g", "i", "t"], "commands": ["git-graph.view"]},
+        {"before": ["<leader>", "g", "n"], "commands": ["workbench.action.editor.nextChange"]},
+        {"before": ["<leader>", "g", "p"], "commands": ["workbench.action.editor.previousChange"]},
 
         // https://stackoverflow.com/questions/47527162/vscode-vscodevim-undo-key-rebinding
         {"before": ["u"], "commands": [{"command": "undo", "args": []}]},
@@ -147,6 +153,5 @@
     },
     "extensions.ignoreRecommendations": true,
 
-    "trae.codeCompletionPro": {},
     "application.extensionMarketUrl": "https://marketplace.visualstudio.com"
 }
