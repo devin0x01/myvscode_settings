@@ -1,0 +1,558 @@
+{
+    "editor.rulers": [
+        120
+    ],
+    "editor.renderWhitespace": "all",
+    "editor.lineHeight": 1.3,
+    "editor.fontSize": 14,
+    "editor.fontFamily": "'FiraCode Nerd Font', 'Consolas', 'Courier New', monospace",
+    "workbench.editor.enablePreview": false,
+    "workbench.editorLargeFileConfirmation": 50,
+    "C_Cpp.default.cppStandard": "c++17",
+    "search.followSymlinks": false,
+    "extensions.experimental.affinity": {
+        "vscode.vim": 1
+    },
+    "extensions.autoUpdate": false,
+    "security.workspace.trust.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "window.commandCenter": false,
+    "editor.formatOnSave": false,
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "clang-format.executable": "/usr/bin/clang-format",
+    "black-formatter.args": [
+        "--skip-string-normalization"
+    ],
+    "vim.leader": ",",
+    "vim.foldfix": true,
+    "vim.handleKeys": {
+        "<C-f>": false,
+        "<C-b>": false
+    },
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<C-d>"
+            ],
+            "after": [
+                "Delete"
+            ]
+        },
+        {
+            "before": [
+                "<C-h>"
+            ],
+            "after": [
+                "Left"
+            ]
+        },
+        {
+            "before": [
+                "<C-l>"
+            ],
+            "after": [
+                "Right"
+            ]
+        },
+        {
+            "before": [
+                "<C-k>"
+            ],
+            "after": [
+                "Up"
+            ]
+        },
+        {
+            "before": [
+                "<C-j>"
+            ],
+            "after": [
+                "Down"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "f"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "<C-j>"
+            ],
+            "after": [
+                "4",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "<C-k>"
+            ],
+            "after": [
+                "4",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "<C-d>"
+            ],
+            "after": [
+                "9",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "<C-u>"
+            ],
+            "after": [
+                "9",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "s",
+                "o"
+            ],
+            "commands": [
+                "workbench.action.closeOtherEditors"
+            ]
+        },
+        {
+            "before": [
+                "s",
+                "r"
+            ],
+            "commands": [
+                "workbench.action.closeEditorsToTheRight"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "d>"
+            ],
+            "commands": [
+                "editor.action.revealDefinition"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "A"
+            ],
+            "commands": [
+                "C_Cpp.SwitchHeaderSource"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h",
+                "s"
+            ],
+            "commands": [
+                "highlightwords.addHighlight"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h",
+                "c"
+            ],
+            "commands": [
+                "highlightwords.removeAllHighlights"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                "workbench.view.explorer"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "b"
+            ],
+            "commands": [
+                "workbench.action.toggleAuxiliaryBar"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "i",
+                "t"
+            ],
+            "commands": [
+                "git-graph.view"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "f"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "<C-j>"
+            ],
+            "after": [
+                "4",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "<C-k>"
+            ],
+            "after": [
+                "4",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "<C-d>"
+            ],
+            "after": [
+                "9",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "<C-u>"
+            ],
+            "after": [
+                "9",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "s",
+                "o"
+            ],
+            "commands": [
+                "workbench.action.closeOtherEditors"
+            ]
+        },
+        {
+            "before": [
+                "s",
+                "r"
+            ],
+            "commands": [
+                "workbench.action.closeEditorsToTheRight"
+            ]
+        },
+        {
+            "before": [
+                "s",
+                "c"
+            ],
+            "after": [
+                "<C-w>",
+                "o"
+            ]
+        },
+        {
+            "before": [
+                "s",
+                "h"
+            ],
+            "after": [
+                "<C-w>",
+                "h"
+            ]
+        },
+        {
+            "before": [
+                "s",
+                "l"
+            ],
+            "after": [
+                "<C-w>",
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "s",
+                "j"
+            ],
+            "after": [
+                "<C-w>",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "s",
+                "k"
+            ],
+            "after": [
+                "<C-w>",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "d>"
+            ],
+            "commands": [
+                "editor.action.revealDefinition"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "A"
+            ],
+            "commands": [
+                "C_Cpp.SwitchHeaderSource"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h",
+                "s"
+            ],
+            "commands": [
+                "highlightwords.addHighlight"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h",
+                "c"
+            ],
+            "commands": [
+                "highlightwords.removeAllHighlights"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                "workbench.view.explorer"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "b"
+            ],
+            "commands": [
+                "workbench.action.toggleAuxiliaryBar"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "i",
+                "t"
+            ],
+            "commands": [
+                "git-graph.view"
+            ]
+        },
+        {
+            "before": [
+                "u"
+            ],
+            "commands": [
+                {
+                    "command": "undo",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<C-r>"
+            ],
+            "commands": [
+                {
+                    "command": "redo",
+                    "args": []
+                }
+            ]
+        }
+    ],
+    "vim.autoSwitchInputMethod.enable": true,
+    "vim.autoSwitchInputMethod.defaultIM": "1033",
+    "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\Mysw\\Bin\\im-select.exe",
+    "vim.autoSwitchInputMethod.switchIMCmd": "C:\\Mysw\\Bin\\im-select.exe {im}",
+    "highlightwords.colors": [
+        {
+            "light": "#b3ffb3",
+            "dark": "orange"
+        },
+        {
+            "light": "#b3b3ff",
+            "dark": "lightgreen"
+        },
+        {
+            "light": "#b3d9ff",
+            "dark": "cyan"
+        },
+        {
+            "light": "#e6ffb3",
+            "dark": "pink"
+        },
+        {
+            "light": "#ffd9b3",
+            "dark": "magenta"
+        },
+        {
+            "light": "#ffb3ff",
+            "dark": "cornflowerblue"
+        },
+        {
+            "light": "#ffff80",
+            "dark": "green"
+        },
+        {
+            "light": "#d1e0e0",
+            "dark": "red"
+        }
+    ],
+    "highlightwords.box": {
+        "light": true,
+        "dark": false
+    },
+    "highlightwords.defaultMode": 1,
+    "highlightwords.showSidebar": {
+        "default": true
+    },
+    "highlight.configuration.ignoreCase": false,
+    "vs-external-tools.externalCommand1.command": "C:\\Mysw\\Qt\\Qt5.12.12\\5.12.12\\mingw73_32\\bin\\designer.exe",
+    "vs-external-tools.externalCommand1.args": [
+        "$(ItemPath)"
+    ],
+    "vs-external-tools.externalCommand1.cwd": "$(ItemDir)",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": true,
+    "diffEditor.useInlineViewWhenSpaceIsLimited": false,
+    "workbench.editorAssociations": {
+        "{hexdiff}:/**/*.*": "hexEditor.hexedit",
+        "{git,gitlens,git-graph}:/**/*.{md,csv,svg}": "default"
+    },
+    "extensions.ignoreRecommendations": true,
+    "cursor.cpp.disabledLanguages": [
+        "plaintext",
+        "markdown",
+        "scminput"
+    ]
+}
