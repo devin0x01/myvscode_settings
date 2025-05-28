@@ -74,6 +74,8 @@
         {"before": ["<leader>", "g", "i", "t"], "commands": ["git-graph.view"]},
         {"before": ["<leader>", "g", "n"], "commands": ["workbench.action.editor.nextChange"]},
         {"before": ["<leader>", "g", "p"], "commands": ["workbench.action.editor.previousChange"]},
+
+        {"before": ["<leader>", "r"], "commands": ["workbench.action.tasks.rerunForActiveTerminal"]},
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {"before": ["<leader>", "f", "f"], "commands": ["workbench.action.quickOpen"]},
@@ -105,6 +107,8 @@
         {"before": ["<leader>", "g", "i", "t"], "commands": ["git-graph.view"]},
         {"before": ["<leader>", "g", "n"], "commands": ["workbench.action.editor.nextChange"]},
         {"before": ["<leader>", "g", "p"], "commands": ["workbench.action.editor.previousChange"]},
+
+        {"before": ["<leader>", "r"], "commands": ["workbench.action.tasks.rerunForActiveTerminal"]},
 
         // https://stackoverflow.com/questions/47527162/vscode-vscodevim-undo-key-rebinding
         {"before": ["u"], "commands": [{"command": "undo", "args": []}]},
