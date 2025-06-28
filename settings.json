@@ -22,7 +22,8 @@
     "editor.formatOnSave": false, // 这个不要打开，否则保存时会自动格式化
     "[c]": {"editor.defaultFormatter": "xaver.clang-format"},
     "[cpp]": {"editor.defaultFormatter": "xaver.clang-format"},
-    "clang-format.executable": "/usr/bin/clang-format",
+    "[linux]": { "clang-format.executable": "/usr/bin/clang-format" },
+    "[windows]": { "clang-format.executable": "C:\\Mysw\\LLVM\\bin\\clang-format.exe" },
 
     // python formatter
     "black-formatter.args": ["--skip-string-normalization"],
