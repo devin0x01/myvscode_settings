@@ -39,7 +39,7 @@
         "command": "workbench.action.toggleAuxiliaryBar"
     },
     {
-        "key": "Alt Alt",
+        "key": "alt alt",
         "command": "workbench.action.quickOpen"
     },
     {
