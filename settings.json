@@ -16,7 +16,12 @@
     "extensions.autoUpdate": false,
     "security.workspace.trust.enabled": false,
     "editor.stickyScroll.enabled": false,
+
     "window.commandCenter": false,
+    // 禁用Alt触发菜单
+    "window.titleBarStyle": "custom",
+    "window.customMenuBarAltFocus": false,
+    "window.enableMenuBarMnemonics": false,
 
     // clang-format
     "editor.formatOnSave": false, // 这个不要打开，否则保存时会自动格式化
@@ -69,18 +74,19 @@
         {"before": ["<leader>", "A"], "commands": ["C_Cpp.SwitchHeaderSource"]},
         {"before": ["<leader>", "h", "s"], "commands": ["highlightwords.addHighlight"]},
         {"before": ["<leader>", "h", "c"], "commands": ["highlightwords.removeAllHighlights"]},
-        {"before": ["<leader>", "e"], "commands": ["workbench.view.explorer"]},
-        {"before": ["<leader>", "b"], "commands": ["workbench.action.toggleAuxiliaryBar"]},
 
-        {"before": ["<leader>", "g", "i", "t"], "commands": ["git-graph.view"]},
+        {"before": ["<leader>", "e"], "commands": ["workbench.view.explorer"]},
+        // {"before": ["<leader>", "e", "h"], "commands": ["workbench.action.toggleSidebarVisibility"]},
+        // {"before": ["<leader>", "e", "l"], "commands": ["workbench.action.toggleAuxiliaryBar"]},
+        {"before": ["<leader>", "b"], "commands": ["workbench.action.tasks.build"]},
+        {"before": ["<leader>", "r"], "commands": ["workbench.action.tasks.restartTask"]},
+
         {"before": ["<leader>", "g", "n"], "commands": ["workbench.action.editor.nextChange"]},
         {"before": ["<leader>", "g", "p"], "commands": ["workbench.action.editor.previousChange"]},
         {"before": ["<leader>", "g", "u"], "commands": ["git.revertSelectedRanges"]},
 
         {"before": ["<leader>", "c", "d"], "commands": ["editor.action.peekDefinition"]},
-        {"before": ["<leader>", "c", "r"], "commands": ["editor.action.referenceSearch.trigger"]},
-
-        {"before": ["<leader>", "r"], "commands": ["workbench.action.tasks.rerunForActiveTerminal"]},
+        {"before": ["<leader>", "c", "r"], "commands": ["editor.action.referenceSearch.trigger"]}
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {"before": ["<leader>", "f", "f"], "commands": ["workbench.action.quickOpen"]},
@@ -106,18 +112,19 @@
         {"before": ["<leader>", "A"], "commands": ["C_Cpp.SwitchHeaderSource"]},
         {"before": ["<leader>", "h", "s"], "commands": ["highlightwords.addHighlight"]},
         {"before": ["<leader>", "h", "c"], "commands": ["highlightwords.removeAllHighlights"]},
-        {"before": ["<leader>", "e"], "commands": ["workbench.view.explorer"]},
-        {"before": ["<leader>", "b"], "commands": ["workbench.action.toggleAuxiliaryBar"]},
 
-        {"before": ["<leader>", "g", "i", "t"], "commands": ["git-graph.view"]},
+        {"before": ["<leader>", "e", "e"], "commands": ["workbench.view.explorer"]},
+        // {"before": ["<leader>", "e", "h"], "commands": ["workbench.action.toggleSidebarVisibility"]},
+        // {"before": ["<leader>", "e", "l"], "commands": ["workbench.action.toggleAuxiliaryBar"]},
+        {"before": ["<leader>", "b"], "commands": ["workbench.action.tasks.build"]},
+        {"before": ["<leader>", "r"], "commands": ["workbench.action.tasks.restartTask"]},
+
         {"before": ["<leader>", "g", "n"], "commands": ["workbench.action.editor.nextChange"]},
         {"before": ["<leader>", "g", "p"], "commands": ["workbench.action.editor.previousChange"]},
         {"before": ["<leader>", "g", "u"], "commands": ["git.revertSelectedRanges"]},
 
         {"before": ["<leader>", "c", "d"], "commands": ["editor.action.peekDefinition"]},
         {"before": ["<leader>", "c", "r"], "commands": ["editor.action.referenceSearch.trigger"]},
-
-        {"before": ["<leader>", "r"], "commands": ["workbench.action.tasks.rerunForActiveTerminal"]},
 
         // https://stackoverflow.com/questions/47527162/vscode-vscodevim-undo-key-rebinding
         {"before": ["u"], "commands": [{"command": "undo", "args": []}]},
@@ -139,7 +146,7 @@
         { "light": "#ffd9b3", "dark": "magenta" },
         { "light": "#ffb3ff", "dark": "cornflowerblue" },
         { "light": "#ffff80", "dark": "green" },
-        { "light": "#d1e0e0", "dark": "red" }                                        
+        { "light": "#d1e0e0", "dark": "red" }
     ],
     "highlightwords.box": {
         "light": true,
