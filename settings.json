@@ -52,6 +52,9 @@
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         {"before": ["<leader>", "f", "f"], "commands": ["workbench.action.quickOpen"]},
+        {"before": ["<leader>", "f", "m"], "commands": ["workbench.action.quickOpen", "workbench.action.quickOpenNavigateNextInRecentFilesPicker"]},
+        {"before": ["<leader>", "f", "t"], "commands": ["workbench.action.gotoSymbol"]},
+
         {"before": ["<C-j>"], "after": ["4", "j"]},
         {"before": ["<C-k>"], "after": ["4", "k"]},
         {"before": ["<C-d>"], "after": ["9", "j"]},
@@ -86,10 +89,15 @@
         {"before": ["<leader>", "g", "u"], "commands": ["git.revertSelectedRanges"]},
 
         {"before": ["<leader>", "c", "d"], "commands": ["editor.action.peekDefinition"]},
-        {"before": ["<leader>", "c", "r"], "commands": ["editor.action.referenceSearch.trigger"]}
+        {"before": ["<leader>", "c", "r"], "commands": ["editor.action.referenceSearch.trigger"]},
+
+        {"before": ["<leader>", "x"], "after": ["g", "c", "c"]},
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {"before": ["<leader>", "f", "f"], "commands": ["workbench.action.quickOpen"]},
+        {"before": ["<leader>", "f", "m"], "commands": ["workbench.action.quickOpen", "workbench.action.quickOpenNavigateNextInRecentFilesPicker"]},
+        {"before": ["<leader>", "f", "t"], "commands": ["workbench.action.gotoSymbol"]},
+
         {"before": ["<C-j>"], "after": ["4", "j"]},
         {"before": ["<C-k>"], "after": ["4", "k"]},
         {"before": ["<C-d>"], "after": ["9", "j"]},
@@ -125,6 +133,8 @@
 
         {"before": ["<leader>", "c", "d"], "commands": ["editor.action.peekDefinition"]},
         {"before": ["<leader>", "c", "r"], "commands": ["editor.action.referenceSearch.trigger"]},
+
+        {"before": ["<leader>", "x"], "after": ["g", "c", "c"]},
 
         // https://stackoverflow.com/questions/47527162/vscode-vscodevim-undo-key-rebinding
         {"before": ["u"], "commands": [{"command": "undo", "args": []}]},

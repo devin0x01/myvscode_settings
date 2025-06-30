@@ -43,6 +43,16 @@
         "command": "workbench.action.quickOpen"
     },
     {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenNavigatePrevious",
+        "when": "inQuickOpen"
+    },
+    {
         "key": "ctrl+alt+d",
         "command": "vs-external-tools.externalCommand1",
         "args": "Qt Designer",
