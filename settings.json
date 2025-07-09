@@ -59,6 +59,8 @@
         {"before": ["<C-k>"], "after": ["4", "k"]},
         {"before": ["<C-d>"], "after": ["9", "j"]},
         {"before": ["<C-u>"], "after": ["9", "k"]},
+        {"before": ["<C-o>"], "commands": ["workbench.action.navigateBack"]},
+        {"before": ["<C-i>"], "commands": ["workbench.action.navigateForward"]},
 
         {"before": ["<leader>", "t", "h"], "commands": ["workbench.action.previousEditor"]},
         {"before": ["<leader>", "t", "l"], "commands": ["workbench.action.nextEditor"]},
@@ -102,6 +104,8 @@
         {"before": ["<C-k>"], "after": ["4", "k"]},
         {"before": ["<C-d>"], "after": ["9", "j"]},
         {"before": ["<C-u>"], "after": ["9", "k"]},
+        {"before": ["<C-o>"], "commands": ["workbench.action.navigateBack"]},
+        {"before": ["<C-i>"], "commands": ["workbench.action.navigateForward"]},
 
         {"before": ["<leader>", "t", "h"], "commands": ["workbench.action.previousEditor"]},
         {"before": ["<leader>", "t", "l"], "commands": ["workbench.action.nextEditor"]},
@@ -182,4 +186,5 @@
         "{git,gitlens,git-graph}:/**/*.{md,csv,svg}": "default"
     },
     "extensions.ignoreRecommendations": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
 }
