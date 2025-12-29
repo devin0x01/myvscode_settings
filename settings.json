@@ -182,9 +182,12 @@
     "diffEditor.useInlineViewWhenSpaceIsLimited": false,
 
     "workbench.editorAssociations": {
-        "{hexdiff}:/**/*.*": "hexEditor.hexedit",
-        "{git,gitlens,git-graph}:/**/*.{md,csv,svg}": "default"
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "{hexdiff}:/**/*.*": "hexEditor.hexedit"
     },
     "extensions.ignoreRecommendations": true,
     "github.copilot.nextEditSuggestions.enabled": true,
+    "terminal.integrated.suggest.providers": {
+        "vscode.terminal-suggest": false
+    }
 }
