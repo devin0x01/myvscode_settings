@@ -79,6 +79,8 @@
         {"before": ["<leader>", "A"], "commands": ["C_Cpp.SwitchHeaderSource"]},
         {"before": ["<leader>", "h", "s"], "commands": ["highlightwords.addHighlight"]},
         {"before": ["<leader>", "h", "c"], "commands": ["highlightwords.removeAllHighlights"]},
+        {"before": ["<leader>", "h", "n"], "commands": ["highlightwords.findNext"]},
+        {"before": ["<leader>", "h", "p"], "commands": ["highlightwords.findPrevious"]},
 
         {"before": ["<leader>", "e"], "commands": ["workbench.view.explorer"]},
         // {"before": ["<leader>", "e", "h"], "commands": ["workbench.action.toggleSidebarVisibility"]},
@@ -124,6 +126,8 @@
         {"before": ["<leader>", "A"], "commands": ["C_Cpp.SwitchHeaderSource"]},
         {"before": ["<leader>", "h", "s"], "commands": ["highlightwords.addHighlight"]},
         {"before": ["<leader>", "h", "c"], "commands": ["highlightwords.removeAllHighlights"]},
+        {"before": ["<leader>", "h", "n"], "commands": ["highlightwords.findNext"]},
+        {"before": ["<leader>", "h", "p"], "commands": ["highlightwords.findPrevious"]},
 
         {"before": ["<leader>", "e", "e"], "commands": ["workbench.view.explorer"]},
         // {"before": ["<leader>", "e", "h"], "commands": ["workbench.action.toggleSidebarVisibility"]},
@@ -189,5 +193,5 @@
     "github.copilot.nextEditSuggestions.enabled": true,
     "terminal.integrated.suggest.providers": {
         "vscode.terminal-suggest": false
-    }
+    },
 }
