@@ -181,7 +181,7 @@
     "vs-external-tools.externalCommand1.cwd": "$(ItemDir)",
 
     // diff
-    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.ignoreTrimWhitespace": true,
     "diffEditor.renderSideBySide": true,
     "diffEditor.useInlineViewWhenSpaceIsLimited": false,
 
@@ -191,7 +191,4 @@
     },
     "extensions.ignoreRecommendations": true,
     "github.copilot.nextEditSuggestions.enabled": true,
-    "terminal.integrated.suggest.providers": {
-        "vscode.terminal-suggest": false
-    },
 }
